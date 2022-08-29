@@ -1,0 +1,35 @@
+:root {
+  --primary: #2a85a2;
+  --yellow: #f4c11a;
+  --white: #ffffff;
+  --light-gray: #e2e2e2;
+  --gray: #7a7a7a;
+  --dark-1: #353a40;
+  --dark-2: #212121;
+  --dark-3: #181715;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--white);
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+}
