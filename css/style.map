@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		":root {\r\n  --primary: #2a85a2;\r\n  --yellow: #f4c11a;\r\n  --white: #ffffff;\r\n  --light-gray: #e2e2e2;\r\n  --gray: #7a7a7a;\r\n  --dark-1: #353a40;\r\n  --dark-2: #212121;\r\n  --dark-3: #181715;\r\n}\r\n\r\n*,\r\n*::after,\r\n*::before {\r\n  box-sizing: border-box;\r\n  outline: none;\r\n   margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nbody {\r\n   overflow-x: hidden;\r\n  color: var(--dark-1);\r\n  background-color: var(--white);\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  color: inherit;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.8;\r\n}\r\n\r\n/* ===== HEADER ===== */\r\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,KAAK,CAAC;EACJ,SAAS,CAAA,QAAC;EACV,QAAQ,CAAA,QAAC;EACT,OAAO,CAAA,QAAC;EACR,YAAY,CAAA,QAAC;EACb,MAAM,CAAA,QAAC;EACP,QAAQ,CAAA,QAAC;EACT,QAAQ,CAAA,QAAC;EACT,QAAQ,CAAA,QAAC;CACV;;;AAED,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACR,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACV,OAAO,EAAE,CAAC;CACX;;;AAED,AAAA,IAAI,CAAC;EACF,UAAU,EAAE,MAAM;EACnB,KAAK,EAAE,aAAa;EACpB,gBAAgB,EAAE,YAAY;CAC/B;;;AAED,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAO;CACf;;;AAED,AAAA,CAAC,CAAC;EACA,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CACjB;;AAED,wBAAwB"
+}
