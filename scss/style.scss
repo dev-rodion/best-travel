@@ -1,4 +1,5 @@
 @import "_fonts";
+@import "_libs";
 
 :root {
   --primary: #2a85a2;
@@ -54,6 +55,10 @@ ul {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  &-field {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 }
 
 img,
@@ -346,5 +351,100 @@ svg {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+/* ====== INTRO ===== */
+.intro {
+  &__inner {
+    position: relative;
+  }
+  .arrows_box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: calc(1200px + 120px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  &__item {
+    display: none;
+    position: relative;
+    &:first-child {
+      display: flex;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--light-gray);
+      z-index: 1;
+    }
+    content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      text-align: center;
+      max-width: 970px;
+      min-height: 650px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      font-size: 64px;
+      line-height: 75px;
+    }
+    p {
+      max-width: 770px;
+      margin-top: 26px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 35px;
+      font-size: 18px;
+      text-transform: none;
+      font-weight: 400;
+      padding: 8px 32px;
+      border-radius: 20px;
+    }
+  }
+}
+
+.intro-slider {
+  &__wrapper {
+    position: relative;
+    display: none;
+    background-color: var(--dark-1);
+    background-position: center;
+    background-size: cover;
+    &:first-child {
+      display: block;
+    }
+  }
+  &__slider {
+    // margin: 0 auto;
+  }
+  &__item {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  &__text {
+    margin-top: 26px;
+  }
+  &__button {
+    margin-top: 35px;
   }
 }
