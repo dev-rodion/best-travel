@@ -30,4 +30,15 @@ window.onload = () => {
     </button>
     `,
   });
+
+  $(".search__select select").customSelect({
+    block: "search__select--custom",
+    showCallback: function () {
+      $(this).parent().addClass("search__select--active");
+    },
+    hideCallback: function () {
+      $(this).parent().removeClass("search__select--active");
+    },
+    includeValue: true,
+  });
 };
