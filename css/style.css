@@ -1057,3 +1057,106 @@ svg {
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 4a8 8 0 100 16 8 8 0 000-16zm-9 8c0-5 4-9 9-9s9 4 9 9-4 9-9 9-9-4-9-9z' fill='%237A7A7A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.568 7.225c.553 0 .5.448.5 1v4h5c.553 0 1-.052 1 .5s-.447.5-1 .5h-5a1 1 0 01-1-1v-4c0-.552-.052-1 .5-1z' fill='%237A7A7A'/%3E%3C/svg%3E");
   background-size: cover;
 }
+
+/* ====== TOP DESTINATIONS  ===== */
+.top-destinations__content {
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 220px;
+}
+
+.top-destinations__item {
+  display: block;
+  grid-column: span 3;
+  position: relative;
+}
+
+.top-destinations__item .item__img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 0;
+}
+
+.top-destinations__item .item__img-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(72.37deg, rgba(0, 0, 0, 0.3) 7.72%, rgba(0, 0, 0, 0) 100%);
+}
+
+.top-destinations__item .item__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-destinations__item .item__count {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 12px;
+  line-height: 20px;
+  border-radius: 10px;
+  background-color: var(--white);
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: auto;
+}
+
+.top-destinations__item .item__title {
+  font-weight: 500;
+}
+
+.top-destinations__item .item__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.top-destinations__item:nth-child(2) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.top-destinations__item:nth-child(2) .item__info {
+  padding: 30px;
+}
+
+.top-destinations__item:nth-child(2) .item__count {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 20px;
+  border-radius: 15px;
+}
+
+.top-destinations__item:nth-child(2) .item__title {
+  font-size: 26px;
+}
+
+.top-destinations__item:nth-child(2) .item__text {
+  font-size: 14px;
+}
+
+.top-destinations__item:nth-child(3) {
+  grid-column: span 5;
+}
+
+.top-destinations__item:nth-child(5) {
+  grid-column: span 2;
+}
