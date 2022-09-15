@@ -76,6 +76,10 @@ svg {
 }
 
 .button {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
   color: var(--white);
   background-color: var(--primary);
   text-transform: uppercase;

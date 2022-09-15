@@ -559,3 +559,34 @@
     grid-column: span 2;
   }
 }
+
+/* ====== BANNER  ===== */
+.banner {
+  &__bg {
+    background-color: var(--light-gray);
+    max-width: 1920px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center right;
+    padding: 40px 60px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+  }
+  &__title,
+  &__text,
+  &__button {
+    margin-left: 0;
+    color: var(--white);
+  }
+  &__title {
+    font-size: 48px;
+    text-transform: none;
+  }
+  &__text {
+    margin-top: 10px;
+  }
+  &__button {
+    margin-top: 18px;
+  }
+}

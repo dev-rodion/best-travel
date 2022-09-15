@@ -78,6 +78,10 @@ svg {
 }
 
 .button {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
   color: var(--white);
   background-color: var(--primary);
   text-transform: uppercase;
@@ -1159,4 +1163,35 @@ svg {
 
 .top-destinations__item:nth-child(5) {
   grid-column: span 2;
+}
+
+/* ====== BANNER  ===== */
+.banner__bg {
+  background-color: var(--light-gray);
+  max-width: 1920px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center right;
+  padding: 40px 60px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.banner__title, .banner__text, .banner__button {
+  margin-left: 0;
+  color: var(--white);
+}
+
+.banner__title {
+  font-size: 48px;
+  text-transform: none;
+}
+
+.banner__text {
+  margin-top: 10px;
+}
+
+.banner__button {
+  margin-top: 18px;
 }
