@@ -694,3 +694,27 @@
     grid-row: span 1;
   }
 }
+
+/* ====== BREADCRUMBS  ===== */
+.breadcrumbs {
+  background-color: rgba(#000, 0.4);
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+  &__list {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  &__item {
+    &::after {
+      content: "/";
+      margin-right: 4px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
