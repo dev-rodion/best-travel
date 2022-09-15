@@ -718,3 +718,31 @@
     }
   }
 }
+
+/* ====== INTRO BANNER  ===== */
+.intro-banner {
+  &__bg {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--gray);
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+  }
+  &__title {
+    text-align: center;
+    max-width: 770px;
+    font-size: 64px;
+    margin: 0 auto;
+    color: var(--white);
+    text-transform: uppercase;
+  }
+}
+.breadcrumbs + .intro-banner {
+  margin-top: -50px;
+}
