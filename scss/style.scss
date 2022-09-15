@@ -746,3 +746,40 @@
 .breadcrumbs + .intro-banner {
   margin-top: -50px;
 }
+
+/* ====== ABOUT ===== */
+.about {
+  &__title {
+    font-weight: 400;
+    span {
+      font-weight: 700;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+    margin-top: 35px;
+  }
+  &__text {
+    grid-column: span 5;
+    p {
+      margin-bottom: 20px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__img-box {
+    grid-column: span 7;
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
